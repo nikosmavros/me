@@ -1,0 +1,296 @@
+@import url('fonts/fonts.css');
+
+body { background: #ecf0f1; font-family: 'MisoRegular'; font-size: 16px; margin:0; padding: 0; }
+
+/*  The Photos ----------------------------------------*/
+	.img-container { text-align: center; overflow: hidden; width: 200px; height: 200px; position: relative; z-index:999;  border: 5px solid #bdc3c7; border-radius: 200px; margin: 20px auto; }
+	.myphoto { display: none; position:absolute; top:0; left:0; max-width: 100%; height: auto; }
+	.myphoto.active { display: inline-block; z-index:9999; }
+
+	.sp-container {	width: 900px; height: 350px; position: relative; margin: 20px auto 0 auto; }
+	.sp-content { width: 100%; height: 400px; position: relative; }
+
+/*  The Line ----------------------------------------*/
+	.sp-content:after {	content: ''; width: 4px; background: #1d1e22; height: 100%; position: absolute; left: 50%; }
+
+/*  The Text ----------------------------------------*/	
+	.sp-container h2 { color: #1d1e22;	text-shadow: 0px 0px 1px rgba(0,0,0,0.9); font-size:100%; font-weight: normal; margin: 0; padding: 0; }
+
+	.sp-wrap { width: 400px; padding: 0px 25px; height: 100%; text-align: right; font-size: 70px; line-height: 80px; float: left; position: relative; background: #ecf0f1; overflow: hidden; }
+	.sp-wrap span {	display: block;	background: #ecf0f1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0; }
+	.sp-wrap span.sp-bottom { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); opacity: 1; text-transform: uppercase; }
+	.sp-wrap span.sp-mid { font-size: 1em; line-height: 130px; position: relative; }
+
+	
+/*  The Right Side ----------------------------------------*/
+	.sp-container .sp-right h2 { color: #e74c3c; text-shadow: 0px 0px 1px rgba(255,255,255,0.9); }
+	.sp-right span { text-align: left; }
+
+
+/*  The Text Below  ----------------------------------------*/
+	.sp-full { position: absolute; font-size: 67px; top: 142px; width: 800px; left: 145px;	}
+
+	.sp-full .btn { background: #e74c3c; color: #fff; text-decoration: none; border-radius: 4px; padding: 10px 40px; display: inline-block; font-size: 40px; margin-top: 40px;	}
+	.sp-full .btn:hover { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); opacity: 0.8; }
+	.sp-full h2 { width: 400px; padding: 0px 50px 0px 0px; float: left; text-align: right; line-height: 1; }
+	.sp-full .mail-link { color: #3498db; font-size: 40px; margin-top: 20px; float: left; text-decoration: none; }
+	.sp-full .mail-link:hover { text-decoration: underline;  }
+
+
+/**/
+@-webkit-keyframes open {
+	0%   { -webkit-transform: scale(1,0); }
+	100% { -webkit-transform: scale(1,1); }
+}
+
+@-webkit-keyframes squeeze {
+	0%   { height: 400px; }
+	100% { height: 120px; }
+}
+
+@-webkit-keyframes fadeOut{
+	0%   { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadeIn{
+	0%   { opacity: 0;	}
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes slideLeft{
+	0%   { -webkit-transform: translateX(120%); }
+	100% { -webkit-transform: translateX(0%); }
+}
+
+@-webkit-keyframes slideRight{
+	0%   { -webkit-transform: translateX(-120%); }
+	100% { -webkit-transform: translateX(0%); }
+}
+
+@-webkit-keyframes moveUp{
+	0%   { -webkit-transform: translateY(0px);	}
+	100% { -webkit-transform: translateY(-170px); }
+
+}
+
+@-webkit-keyframes zoomIn{
+	0%   { -webkit-transform: scale(0); }
+	100% { -webkit-transform: scale(1); }
+}
+
+
+
+/**/
+@-moz-keyframes open {
+	0%   { -moz-transform: scale(1,0); }
+	100% { -moz-transform: scale(1,1); }
+}
+
+@-moz-keyframes squeeze {
+	0%   { height: 400px; }
+	100% { height: 120px; }
+}
+
+@-moz-keyframes fadeOut{
+	0%   { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes fadeIn{
+	0%   { opacity: 0;	}
+	100% { opacity: 1; }
+}
+
+@-moz-keyframes slideLeft{
+	0%   { -moz-transform: translateX(120%); }
+	100% { -moz-transform: translateX(0%); }
+}
+
+@-moz-keyframes slideRight{
+	0%   { -moz-transform: translateX(-120%); }
+	100% { -moz-transform: translateX(0%); }
+}
+
+@-moz-keyframes moveUp{
+	0%   { -moz-transform: translateY(0px);	}
+	100% { -moz-transform: translateY(-170px); }
+
+}
+
+@-moz-keyframes zoomIn{
+	0%   { -moz-transform: scale(0); }
+	100% { -moz-transform: scale(1); }
+}
+
+
+
+/**/
+@keyframes open {
+	0%   { transform: scale(1,0); }
+	100% { transform: scale(1,1); }
+}
+
+@keyframes squeeze {
+	0%   { height: 400px; }
+	100% { height: 120px; }
+}
+
+@keyframes fadeOut{
+	0%   { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes fadeIn{
+	0%   { opacity: 0;	}
+	100% { opacity: 1; }
+}
+
+@keyframes slideLeft{
+	0%   { transform: translateX(120%); }
+	100% { transform: translateX(0%); }
+}
+
+@keyframes slideRight{
+	0%   { transform: translateX(-120%); }
+	100% { transform: translateX(0%); }
+}
+
+@keyframes moveUp{
+	0%   { transform: translateY(0px);	}
+	100% { transform: translateY(-170px); }
+
+}
+
+@keyframes zoomIn{
+	0%   { transform: scale(0); }
+	100% { transform: scale(1); }
+}
+
+
+/****************************************************************
+*****\  RESPONSIVE  \*******************************************************
+***************************************************************************************/
+
+
+
+    /*  MD - Devices above 1024 ----------------------------------------*/
+    @media (min-width: 992px) {
+		
+	.sp-content { 
+		-webkit-animation: open 0.4s linear forwards, squeeze 0.6s linear 5.5s forwards;
+		-moz-animation: open 0.4s linear forwards, squeeze 0.6s linear 5.5s forwards;
+		-ms-animation: open 0.4s linear forwards, squeeze 0.6s linear 5.5s forwards;
+		animation: open 0.4s linear forwards, squeeze 0.6s linear 5.5s forwards;
+	}
+	
+		
+	/*  The Left Side ----------------------------------------*/
+	.sp-left span.sp-top {
+		-webkit-animation: slideLeft 0.5s ease-in 0.6s backwards, fadeOut 1s linear 4s backwards;
+		   -moz-animation: slideLeft 0.5s ease-in 0.6s backwards, fadeOut 1s linear 4s backwards;
+			-ms-animation: slideLeft 0.5s ease-in 0.6s backwards, fadeOut 1s linear 4s backwards;
+				animation: slideLeft 0.5s ease-in 0.6s backwards, fadeOut 1s linear 4s backwards;
+	}
+	.sp-left span.sp-mid {
+		-webkit-animation: slideLeft 0.5s ease-in 1s backwards, fadeOut 1s linear 4.2s backwards;
+		   -moz-animation: slideLeft 0.5s ease-in 1s backwards, fadeOut 1s linear 4.2s backwards;
+			-ms-animation: slideLeft 0.5s ease-in 1s backwards, fadeOut 1s linear 4.2s backwards;
+				animation: slideLeft 0.5s ease-in 1s backwards, fadeOut 1s linear 4.2s backwards;
+	}
+	.sp-left span.sp-bottom {
+		-webkit-animation: slideLeft 0.5s ease-in 1.4s backwards, moveUp 0.6s linear 5s forwards;
+		   -moz-animation: slideLeft 0.5s ease-in 1.4s backwards, moveUp 0.6s linear 5s forwards;
+			-ms-animation: slideLeft 0.5s ease-in 1.4s backwards, moveUp 0.6s linear 5s forwards;
+				animation: slideLeft 0.5s ease-in 1.4s backwards, moveUp 0.6s linear 5s forwards;
+	}
+	
+	/*  The Right Side ----------------------------------------*/
+	.sp-right span.sp-top {
+		-webkit-animation: slideRight 0.5s ease-in 2s backwards, fadeOut 1s linear 4.4s backwards;
+		   -moz-animation: slideRight 0.5s ease-in 2s backwards, fadeOut 1s linear 4.4s backwards;
+			-ms-animation: slideRight 0.5s ease-in 2s backwards, fadeOut 1s linear 4.4s backwards;
+				animation: slideRight 0.5s ease-in 2s backwards, fadeOut 1s linear 4.4s backwards;
+	}
+	.sp-right span.sp-mid {
+		-webkit-animation: slideRight 0.5s ease-in 2.4s backwards, fadeOut 1s linear 4.6s backwards;
+		   -moz-animation: slideRight 0.5s ease-in 2.4s backwards, fadeOut 1s linear 4.6s backwards;
+			-ms-animation: slideRight 0.5s ease-in 2.4s backwards, fadeOut 1s linear 4.6s backwards;
+				animation: slideRight 0.5s ease-in 2.4s backwards, fadeOut 1s linear 4.6s backwards;
+	}
+	.sp-right span.sp-bottom {
+		-webkit-animation: slideRight 0.5s ease-in 3.2s backwards, moveUp 0.6s linear 5s forwards;
+		   -moz-animation: slideRight 0.5s ease-in 3.2s backwards, moveUp 0.6s linear 5s forwards;
+			-ms-animation: slideRight 0.5s ease-in 3.2s backwards, moveUp 0.6s linear 5s forwards;
+				animation: slideRight 0.5s ease-in 3.2s backwards, moveUp 0.6s linear 5s forwards;
+	}
+	
+	/*  The Text Below  ----------------------------------------*/
+	.sp-full { 
+		-webkit-animation: fadeIn 1s linear 6.6s backwards;
+		   -moz-animation: fadeIn 1s linear 6.6s backwards;
+			-ms-animation: fadeIn 1s linear 6.6s backwards;
+				animation: fadeIn 1s linear 6.6s backwards;
+	}
+
+	.sp-full .btn { 
+		-webkit-animation: zoomIn 0.7s ease-in-out 7s backwards;
+		   -moz-animation: zoomIn 0.7s ease-in-out 7s backwards;
+			-ms-animation: zoomIn 0.7s ease-in-out 7s backwards;
+				animation: zoomIn 0.7s ease-in-out 7s backwards;
+	}
+
+    }
+
+    /*  SM - Devices below 1024 ----------------------------------------*/
+    @media (max-width: 991px) {
+      
+	.sp-container {	width: 100%; height: 400px; position: relative; margin: 20px auto 0 auto; }
+	.sp-content   { width: 100%; height: 100px; position: relative; }
+	
+	.sp-top,
+	.sp-mid { display: none!important; }
+	
+	.sp-wrap { width: 50%; font-size: 60px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	
+	.sp-full { position: absolute; font-size: 57px; top: 150px; width: 100%; left: 0; }
+	
+	.sp-full .btn { position: fixed; bottom: 0; width: 100%; left: 0; text-align: center; padding: 20px 0; }
+	
+	.sp-full h2 { width: 100%; padding: 0px 20px; float: none;  text-align: center; line-height: 1.2; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	
+	.cta { text-align: center; }
+	.sp-full .mail-link { float: none; }
+
+    }
+
+
+    /*  SM - Portrait tablets and small desktops ----------------------------------------*/
+    @media (min-width: 768px) and (max-width: 991px) {
+	
+    }
+
+    /*  XS - Landscape phones and portrait tablets ----------------------------------------*/
+    @media (max-width: 767px) {
+
+    }
+
+    /*  XS - Landscape phones and smaller */
+     @media (max-width: 550px) {
+		 
+		.sp-content { height: 100px;}  
+	 	.sp-wrap { font-size: 40px; }
+		.sp-full { font-size: 30px; }
+		
+		.sp-full .mail-link { font-size: 30px; }
+		
+		span.sp-bottom { line-height: 1;}
+		
+		.img-container { width: 150px; height: 150px; }
+	
+     }
+
+    /*  XS - Landscape phones and smaller */
+    @media (max-width: 480px) {
+
+    }

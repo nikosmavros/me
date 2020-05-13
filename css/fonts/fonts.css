@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'MisoRegular';
+    src: url('miso-webfont.eot');
+    src: url('miso-webfont.eot?#iefix') format('embedded-opentype'),
+         url('miso-webfont.woff') format('woff'),
+         url('miso-webfont.ttf') format('truetype'),
+         url('miso-webfont.svg#MisoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
