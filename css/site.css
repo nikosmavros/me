@@ -23,14 +23,14 @@ body { background: #ecf0f1; font-family: 'MisoRegular'; font-size: 16px; margin:
 
 	
 /*  The Right Side ----------------------------------------*/
-	.sp-container .sp-right h2 { color: #e74c3c; text-shadow: 0px 0px 1px rgba(255,255,255,0.9); }
+	.sp-container .sp-right h2 { color: #3498db; text-shadow: 0px 0px 1px rgba(255,255,255,0.9); }
 	.sp-right span { text-align: left; }
 
 
 /*  The Text Below  ----------------------------------------*/
 	.sp-full { position: absolute; font-size: 67px; top: 142px; width: 800px; left: 145px;	}
 
-	.sp-full .btn { background: #e74c3c; color: #fff; text-decoration: none; border-radius: 4px; padding: 10px 40px; display: inline-block; font-size: 40px; margin-top: 40px;	}
+	.sp-full .btn { background: #3498db; color: #fff; text-decoration: none; border-radius: 4px; padding: 10px 40px; display: inline-block; font-size: 40px; margin-top: 40px;	}
 	.sp-full .btn:hover { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); opacity: 0.8; }
 	.sp-full h2 { width: 400px; padding: 0px 50px 0px 0px; float: left; text-align: right; line-height: 1; }
 	.sp-full .mail-link { color: #3498db; font-size: 40px; margin-top: 20px; float: left; text-decoration: none; }
